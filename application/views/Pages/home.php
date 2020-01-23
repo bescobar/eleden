@@ -1,7 +1,7 @@
 <div class="container-fluid p-4">
   <div class="row mt-0">
     <div class="col-sm-10 mt-0">
-      <p class="font-weight-bold m-0 mb-3">Informacion general</p>
+      <h1 class="font-weight-bold ml-3 mb-3">Inicio</h1>
     </div>
   </div>
 	<div class="row">
