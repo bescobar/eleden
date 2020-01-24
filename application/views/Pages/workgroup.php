@@ -20,7 +20,7 @@
 					  <div class="card-body">
 					    <h5 class="card-title">'.$key['name_workgroup'].'</h5>
 					    <p class="card-text">'.$key['description_workgroup'].'</p>
-					    <a href="#" class="btn btn-primary">Ver detalles</a>
+					    <a href="#!" class="btn btn-primary" onclick="detailsWorkGroup('."'".$key['cod_workgroup']."'".')">Ver detalles</a>
 					  </div>
 					</div>
 				</div>';

@@ -23,4 +23,12 @@ class workgroup_controller extends CI_Controller {
     public function saveGroup() {
     	$this->workgroup_model->saveGroup( $this->input->post('name'), $this->input->post('desc') );
     }
+
+    public function detailsGroup($codeWorkGroup) {
+        $data['dataWorkGroup'] = $this->workgroup_model->detailsWorkGroup($codeWorkGroup);
+		$this->load->view('Layouts/header');
+		$this->load->view('Pages/detailsWorkgroup', $data);
+		$this->load->view('Layouts/footer');
+		$this->load->view('JsView/js_detailsWorkGroup');
+    }
 }

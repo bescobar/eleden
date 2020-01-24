@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-01-22 17:22:14
+Date: 2020-01-24 17:45:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -95,25 +95,16 @@ CREATE TABLE `workgroup` (
   `id_workgroup` int(11) NOT NULL AUTO_INCREMENT,
   `cod_workgroup` varchar(20) NOT NULL,
   `name_workgroup` varchar(100) NOT NULL,
-  `description_workgroup` varchar(100) NOT NULL,
+  `description_workgroup` varchar(255) NOT NULL,
   `status_workgroup` bit(1) DEFAULT NULL,
   PRIMARY KEY (`id_workgroup`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of workgroup
 -- ----------------------------
 INSERT INTO `workgroup` VALUES ('1', 'min_juve', 'Ministerio Juvenil', 'El Ministerio de jovenes es un grupo de trabaja dedicado a velar por la vida espiritual de lo\'s', '');
 INSERT INTO `workgroup` VALUES ('6', 'sociedad.femenil', 'Sociedad Femenil', 'Sociedad Femenil', '');
-INSERT INTO `workgroup` VALUES ('7', 'dd', 'dd', 'ddd', '');
-INSERT INTO `workgroup` VALUES ('8', 'ddd', 'ddd', 'dddd', '');
-INSERT INTO `workgroup` VALUES ('9', 'sdfg', 'sdfg', 'asdf', '');
-INSERT INTO `workgroup` VALUES ('10', 'asdf', 'asdf', 'asdfasd', '');
-INSERT INTO `workgroup` VALUES ('11', 'asdf', 'asdf', 'asdfas', '');
-INSERT INTO `workgroup` VALUES ('12', 'asdf', 'asdf', 'dfasddd', '');
-INSERT INTO `workgroup` VALUES ('13', 'ges', 'ges', 'dss ds', '');
-INSERT INTO `workgroup` VALUES ('14', 'dfd', 'dfd', 'asdd', '');
-INSERT INTO `workgroup` VALUES ('15', 'sociedad.de.caballer', 'Sociedad de caballeros', 'Sociedad de caballeros', '');
 
 -- ----------------------------
 -- Table structure for workplan
@@ -122,7 +113,8 @@ DROP TABLE IF EXISTS `workplan`;
 CREATE TABLE `workplan` (
   `id_plan` int(11) NOT NULL AUTO_INCREMENT,
   `cod_plan` varchar(20) NOT NULL,
-  `description_plan` varchar(100) DEFAULT NULL,
+  `name_plan` varchar(255) DEFAULT NULL,
+  `description_plan` varchar(255) DEFAULT NULL,
   `date_init` date DEFAULT NULL,
   `date_end` date DEFAULT NULL,
   `status_plan` bit(1) DEFAULT NULL,
@@ -132,4 +124,4 @@ CREATE TABLE `workplan` (
 -- ----------------------------
 -- Records of workplan
 -- ----------------------------
-INSERT INTO `workplan` VALUES ('1', 'plan2020', 'Plan de trabajo para el año 2020', '2020-01-01', '2020-12-31', '');
+INSERT INTO `workplan` VALUES ('1', 'plan2020', 'Plan anual 2020', 'Plan de trabajo para el año 2020', '2020-01-01', '2020-12-31', '');

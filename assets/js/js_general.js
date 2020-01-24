@@ -24,7 +24,6 @@ function mensaje(mensaje, tipo) {
     })
 }
 
-
 /*if (screen.width<=412 || screen.width<=869) {
   $("table").addClass('table-responsive');
   

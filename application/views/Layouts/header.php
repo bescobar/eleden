@@ -5,19 +5,23 @@
     <title>El Edén</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/jquery.dataTables.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/leaflet.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/leaflet.extra-markers.min.css">
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fuente.css">
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/timeliner.min.css">
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/daterangepicker.min.css">
-    <!-- FULL CALENDAR -->
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fullcalendar.css">
     
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fullcalendar/daygrid/main.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-select.css')?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>"     media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>"             media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css')?>"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/jquery.dataTables.min.css')?>"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/leaflet.css')?>"           media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/leaflet.extra-markers.min.css')?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/fuente.css') ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/timeliner.min.css')?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/daterangepicker.min.css')?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/tempusdominus-bootstrap-4.min.css')?>">
+    
+    <!-- FULL CALENDAR -->
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/fullcalendar.css')?>">
+    
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/fullcalendar/daygrid/main.css')?>">
 </head>
 <body>
 <!-- Vertical navbar -->
@@ -25,7 +29,7 @@
   <div class="py-4 px-3 mb-4 bg-light text-center">
     <div class="">
       <a href="<?php echo base_url("index.php/home")?>">
-        <img src="<?php echo base_url(); ?>assets/images/user.png" alt="..." width="100" class="">
+        <img src="<?php echo base_url('assets/images/user.png')?>" alt="..." width="100" class="">
       </a>
     </div>
       <div class="media-body">
@@ -43,17 +47,17 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?php echo base_url("index.php/pedidos")?>" class="nav-link text-dark">
+      <a href="<?php echo base_url("index.php/plan-trabajo")?>" class="nav-link text-dark">
         <i class="fas fa-calendar-week mr-3 text-primary fa-1x"></i>Plan de trabajo
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?php echo base_url("index.php/pedidos")?>" class="nav-link text-dark">
+      <a href="<?php echo base_url("index.php/finanzas")?>" class="nav-link text-dark">
       	<i class="fas fa-coins mr-3 text-primary fa-1x"></i>Finanzas
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?php echo base_url("index.php/visitas")?>" class="nav-link text-dark">
+      <a href="<?php echo base_url("index.php/membrecia")?>" class="nav-link text-dark">
         <i class="fas fa-users mr-3 text-primary fa-1x"></i>Membrecia
       </a>
     </li>
@@ -63,7 +67,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="<?php echo base_url("index.php/visitas")?>" class="nav-link text-dark">
+      <a href="<?php echo base_url("index.php/archivos")?>" class="nav-link text-dark">
         <i class="fas fa-archive mr-3 text-primary fa-1x"></i>Archivos
       </a>
     </li>

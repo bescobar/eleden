@@ -1,5 +1,4 @@
 <script type="text/javascript">
-
 	$("#newWorkGroup").click( function() {
 			$("#titleModal").text("Nuevo Grupo")
 		    $("#bodyModal")
@@ -51,7 +50,11 @@
 				}
 			})
 			$('#mdDetails').modal('show');
-	})
+	});
+
+	function detailsWorkGroup(codWorkGroup) {
+		window.location = 'detailsGroup/'+codWorkGroup;
+	}
 
 
 
